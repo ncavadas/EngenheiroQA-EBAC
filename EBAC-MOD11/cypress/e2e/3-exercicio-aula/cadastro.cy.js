@@ -22,7 +22,8 @@ describe('Funcionalidade: Cadastro', () => {
     });
 
     //Cenário igual usando variáveis para que os dados sejam correlatos
-    it('Deve completar o cadastro com sucesso', () => {
+    it('Deve completar o cadastro com sucesso2', () => {
+
         var nome = faker.person.firstName()
         var email = faker.internet.email(nome)
         var sobrenome =faker.person.lastName()
