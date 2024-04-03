@@ -24,7 +24,7 @@ describe('Funcionalidade: Login',() => {
         cy.get('#password').type('Biribinha@23')
         cy.get('.woocommerce-form > .button').click() //semprer que for metodo, tem q ter ()        
         cy.get('.woocommerce-MyAccount-content > :nth-child(2) > :nth-child(1)').should('contain','nina') //should é o método de validação
-    })
+    });
     //it.only serve para executar apenas esse it que está trabalhando, lembrar de tirar dps.
     it('Deve exibir uma mensagem de erro ao inserir usuário inválido', () => {
         cy.get('#username').type('nina2@ninateste.com')
@@ -42,4 +42,6 @@ describe('Funcionalidade: Login',() => {
         cy.get('.woocommerce-error > li').should('contain','Erro: A senha fornecida para o e-mail nina@ninateste.com está incorreta. Perdeu a senha?')
         
     });
+    
+
 })
